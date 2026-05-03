@@ -13,12 +13,14 @@
   display: none;
 }
 
-tw-story[tags~="beginning"] {
-  background-image: url("images/beginning.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="beginning" color="blue"></tw-tag><tw-passagedata pid="1" name="The beginning" tags="beginning" position="725,400" size="100,100">(set: $score to 0)
+tw-passage {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  border-radius: 10px;
+  color: white;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="beginning" color="blue"></tw-tag><tw-passagedata pid="1" name="The beginning" tags="beginning" position="725,400" size="100,100">&lt;img src=&quot;images/beginning.png&quot; class=&quot;story-image&quot;&gt;
+
+(set: $score to 0)
 
 //You sit, exhausted, along the banks of an island with your companions. Your weapons close at hand.
 
