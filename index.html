@@ -11,7 +11,15 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Odyssey: Return to Ithaca.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Odyssey: Return to Ithaca" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="6A459692-12E4-4F16-B149-768EA0569804" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
   display: none;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="The beginning" tags="" position="725,400" size="100,100">(set: $score to 0)
+}
+
+tw-story[tags~="beginning"] {
+  background-image: url("images/beginning.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="beginning" color="blue"></tw-tag><tw-passagedata pid="1" name="The beginning" tags="beginning" position="725,400" size="100,100">(set: $score to 0)
 
 //You sit, exhausted, along the banks of an island with your companions. Your weapons close at hand.
 
@@ -19,7 +27,7 @@ An old wizened woman appears suddenly in front of you.//
 
 Welcome Traveler! I am Hodegos, a faithful guide for your adventure home. 
 
-You must choose each step of this adventure carefully! Your choices may lead you to be a a general commoner, a useless beggar, or a rich and famous leader of renown. 
+You must choose each step of this adventure carefully! Your choices may lead you to be a general commoner, a useless beggar, or a rich and famous leader of renown. 
 
 Sound good? Ready to get started?
 
