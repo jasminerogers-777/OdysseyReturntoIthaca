@@ -13,15 +13,30 @@
   display: none;
 }
 
+/* Base image styling */
 img.story-image {
   width: 100% !important;
-  max-width: 300px !important;
   height: auto !important;
 
   display: block !important;
   margin: 0.5em auto 1em auto !important;
 
   opacity: 0.9;
+}
+
+/* SMALL */
+img.story-image.small {
+  max-width: 250px !important;
+}
+
+/* DEFAULT (medium) */
+img.story-image {
+  max-width: 600px !important;
+}
+
+/* LARGE */
+img.story-image.large {
+  max-width: 900px !important;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="beginning" color="blue"></tw-tag><tw-passagedata pid="1" name="The beginning" tags="beginning" position="725,400" size="100,100">&lt;img src=&quot;images/beginning.png&quot; class=&quot;story-image&quot;&gt;
 
 (set: $score to 0)
