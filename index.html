@@ -37,6 +37,17 @@ img.story-image {
 /* LARGE */
 img.story-image.large {
   max-width: 900px !important;
+}
+
+.narrator {
+  margin: 1em 2em;
+  padding: 0.8em 1em;
+
+  border-left: 2px solid rgba(255,255,255,0.6);
+  border-right: 2px solid rgba(255,255,255,0.6);
+
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="beginning" color="blue"></tw-tag><tw-passagedata pid="1" name="The beginning" tags="beginning" position="725,400" size="100,100">&lt;img src=&quot;images/beginning.png&quot; class=&quot;story-image&quot;&gt;
 
 (set: $score to 0)
@@ -45,11 +56,13 @@ img.story-image.large {
 
 An old wizened woman appears suddenly in front of you.//
 
+&lt;div class=&quot;narrator&quot;&gt;
 Welcome Traveler! I am Hodegos, a faithful guide for your adventure home. 
 
 You must choose each step of this adventure carefully! Your choices may lead you to be a general commoner, a useless beggar, or a rich and famous leader of renown. 
 
 Sound good? Ready to get started?
+&lt;/div&gt;
 
 [[Yes, let&#39;s do this!-&gt;First Choice]] 
 [[This is stupid, but I guess I have no choice.-&gt;First Choice]] 
