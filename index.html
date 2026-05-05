@@ -115,6 +115,8 @@ Jasmine Rogers - FILM 2195]
 
 An old wizened woman appears suddenly in front of you.//
 
+&lt;img src=&quot;images/hodegos.png&quot; class=&quot;story-image.small&quot;&gt;
+
 &lt;div class=&quot;narrator&quot;&gt;
 Welcome Traveler! I am Hodegos, a faithful guide for your adventure home. 
 
@@ -186,7 +188,9 @@ You set sail on a hearty breeze, ready for the day&#39;s adventure.//
 
 [[Board the ship -&gt;Merchant-King Second Choice]]
 
-</tw-passagedata><tw-passagedata pid="6" name="FirstGuide" tags="" position="600,600" size="100,100">&lt;div class=&quot;narrator&quot;&gt;
+</tw-passagedata><tw-passagedata pid="6" name="FirstGuide" tags="" position="600,600" size="100,100">&lt;img src=&quot;images/hodegos.png&quot; class=&quot;story-image.large&quot;&gt;
+
+&lt;div class=&quot;narrator&quot;&gt;
 Hodegos: I won&#39;t be there for every turn of choice, but I can step in here to assist. 
 
 Let’s see now: 
@@ -200,7 +204,9 @@ If you take all your companions, you’ll need to rely on the hospitality of the
 Now I see you&#39;ve just sacked your first city and are eager to return home. 
 &lt;/div&gt;
 
-[[So . . . -&gt;First Choice]] </tw-passagedata><tw-passagedata pid="7" name="Merchant-King Second Choice" tags="" position="900,1000" size="100,100">//Just as you begin to tire, you spot an island . . . . An enchanting voice echoes from the shore. A beautiful songstress sings, braids flowing in the sea air.
+[[So . . . -&gt;First Choice]] </tw-passagedata><tw-passagedata pid="7" name="Merchant-King Second Choice" tags="" position="900,1000" size="100,100">&lt;img src=&quot;images/hierax.png&quot; class=&quot;story-image&quot;&gt;
+
+//Just as you begin to tire, you spot an island . . . . An enchanting voice echoes from the shore. A beautiful songstress sings, braids flowing in the sea air.
 
 You quickly disembark.// 
 
@@ -220,7 +226,9 @@ Won&#39;t you stay? I can offer a lifetime of passion.
 
 [[Um, no offense, but this has trap written all over it. //(You make a run for your ship.)//-&gt;KingNarratorInterruptsIsland]]
 
-</tw-passagedata><tw-passagedata pid="8" name="Ending" tags="" position="800,3400" size="100,100">(if: $score &gt;= 12)[
+</tw-passagedata><tw-passagedata pid="8" name="Ending" tags="" position="800,3400" size="100,100">&lt;img src=&quot;images/ithaca.png&quot; class=&quot;story-image&quot;&gt;
+
+(if: $score &gt;= 12)[
 Your reputation precedes you. 
 
 You are welcomed with love and respect. Cries of &quot;King!&quot; rise from the streets as you are escorted to the throne - no longer a wanderer, but a ruler returned.
@@ -248,7 +256,9 @@ You wander on, weary and diminished, with little to show for the journey.
 
 You have reached the end.
 
-(link: &quot;Start over&quot;)[(restart:)]</tw-passagedata><tw-passagedata pid="9" name="Beggar Second Choice" tags="" position="700,1000" size="100,100">//Just as you begin to tire, you spot an island . . . . An enchanting voice echoes from the shore. A beautiful songstress sings, weaving a golden loom methodically.
+(link: &quot;Start over&quot;)[(restart:)]</tw-passagedata><tw-passagedata pid="9" name="Beggar Second Choice" tags="" position="700,1000" size="100,100">&lt;img src=&quot;images/kalyssa.png&quot; class=&quot;story-image&quot;&gt;
+
+//Just as you begin to tire, you spot an island . . . . An enchanting voice echoes from the shore. A beautiful songstress sings, weaving a golden loom methodically.
 
 You quickly disembark.// 
 
@@ -266,7 +276,7 @@ I see you have no companions as well. Won&#39;t you stay? I can offer a lifetime
 
 [[Um, no offense, but this has trap written all over it. //(You make a run for your ship.)//-&gt;KingNarratorInterruptsIsland]]</tw-passagedata><tw-passagedata pid="10" name="KingNarratorInterruptsIsland" tags="" position="1000,1200" size="100,100">(set: $score to $score + 2)
 
-//Hodegos blinks into view, a stern look etched across his face. He levels that look directly at the enchanter.//
+//Hodegos blinks into view, a stern look etched across their face. They level that look directly at the enchanter.//
 
 &lt;div class=&quot;narrator&quot;&gt;
 Hodegos: I am afraid I must interrupt. As peers I&#39;m sure you understand, but I am graded per decision here, so unfortunately, you will need to let our traveller go!
@@ -274,7 +284,7 @@ Hodegos: I am afraid I must interrupt. As peers I&#39;m sure you understand, but
 
 [[Board the ship-&gt;Third Choice]]</tw-passagedata><tw-passagedata pid="11" name="BeggarNarratorInterruptsIsland" tags="" position="600,1200" size="100,100">(set: $score to $score - 1)
 
-//Hodegos blinks into view, a stern look etched across his face. He levels that look directly at you.//
+//Hodegos blinks into view, a stern look etched across their face. That look is leveled directly at you.//
 
 &lt;div class=&quot;narrator&quot;&gt;
 Hodegos: I am afraid I must interrupt. As appealing as it may be to watch you embrace your own vanity, this is my only gig. 
@@ -286,7 +296,7 @@ Unfortunately you will need to move forward!
 
 [[Board the ship-&gt;Third Choice]]</tw-passagedata><tw-passagedata pid="12" name="MerchantNarratorInterruptsIsland" tags="" position="800,1200" size="100,100">(set: $score to $score + 1)
 
-//Hodegos blinks into view, a stern look etched across his face. He levels that look directly at the enchanter. Then you.//
+//Hodegos blinks into view, a stern look etched across their face. They levels that look directly at the enchanter. Then you.//
 
 &lt;div class=&quot;narrator&quot;&gt;
 Hodegos: I am afraid I must interrupt. As appealing as it may be to watch you both sing to your hearts content, this is my only gig. 
@@ -301,6 +311,8 @@ Unfortunately our traveller will need to move forward!
 Ah, shoreline. A calm river meets the beach. A strikingly tall figure plays along with other maidens among the sands. 
 
 You dock, waving for assistance.// 
+
+&lt;img src=&quot;images/alcyone.png&quot; class=&quot;story-image&quot;&gt;
 
 &lt;div class=&quot;narrator&quot;&gt;
 Alcyone: Oh! I see the waves have tossed you about something awful. You look to be in need of assistance, but . . . who are you? 
@@ -376,6 +388,8 @@ You follow, then halt - a large shadow looms.
 
 A giant approaches!// 
 
+&lt;img src=&quot;images/phonios.png&quot; class=&quot;story-image&quot;&gt;
+
 &lt;div class=&quot;narrator&quot;&gt;
 Phonios: Ah, strangers for my morning meal!
 &lt;/div&gt;
@@ -439,6 +453,8 @@ The warriors fall quickly, but not before blinding the giant.//
 
 [[You limp to the sheep, tie yourself beneath one, and escape as Phonios opens the cave.-&gt;Underworld Choice]]</tw-passagedata><tw-passagedata pid="21" name="Underworld Choice" tags="" position="800,2200" size="100,100">//As you board the ship, the only lonely soul remaining, Hodegos appears before you.//
 
+&lt;img src=&quot;images/hodegos2.png&quot; class=&quot;story-image.large&quot;&gt;
+
 &lt;div class=&quot;narrator&quot;&gt;
 Hodegos: I won&#39;t mince words with you, that was **rough**.
 
@@ -454,7 +470,9 @@ What do you say?
 
 The honored dead gather around closely.
 
-Three figures emerge to stand before you. They speak as one voice.// 
+Three figures emerge to stand before you. They speak as one.// 
+
+&lt;img src=&quot;images/undergods.png&quot; class=&quot;story-image.large&quot;&gt;
 
 &lt;div class=&quot;narrator&quot;&gt;
 Be welcome, weary traveller. Hodegos bids us grant you a boon.
@@ -470,7 +488,9 @@ If it is wisdom you desire, Theophrastus may grant it. Or do you seek fame&#39;s
 
 [[I seek wisdom.-&gt;Underworld Bonus]] 
 [[Fame is my destiny.-&gt;Underworld Bonus]]
-[[In victory all is won. -&gt;Underworld Bonus]] </tw-passagedata><tw-passagedata pid="23" name="Fifth Choice" tags="" position="800,3000" size="100,100">//Your battered raft comes upon the busy docks of a town. 
+[[In victory all is won. -&gt;Underworld Bonus]] </tw-passagedata><tw-passagedata pid="23" name="Fifth Choice" tags="" position="800,3000" size="100,100">&lt;img src=&quot;images/krinoos.png&quot; class=&quot;story-image&quot;&gt;
+
+//Your battered raft comes upon the busy docks of a town. 
 
 The people have tanned, sea-farring complexions. Their leader hurries to your raft, assisting you onto the dock.
 
@@ -513,6 +533,8 @@ You are nearly home, but your ship. Well, it is under attack.
 
 You fashion the floating debris into a raft and sail away.// 
 
+&lt;img src=&quot;images/phonios2.png&quot; class=&quot;story-image&quot;&gt;
+
 &lt;div class=&quot;narrator&quot;&gt;
 Hodegos: Sail just there, it&#39;s not too far. The Thalassioi people live there. I know them well. 
 
@@ -520,6 +542,8 @@ They will aid you in this final stretch of your journey.
 &lt;/div&gt;
 
 [[Seek the Thalassioi.-&gt;Fifth Choice]] </tw-passagedata><tw-passagedata pid="26" name="BeggarFifthChoice" tags="" position="600,3200" size="100,100">(set: $score to $score -1)
+
+&lt;img src=&quot;images/hodegos3.png&quot; class=&quot;story-image&quot;&gt;
 
 &lt;div class=&quot;narrator&quot;&gt;
 Hodegos: Nostos! It certainly has been quite the journey. 
@@ -532,6 +556,8 @@ How though, will you be received in your Odyssean reception?
 [[Let&#39;s find out.-&gt;Ending]] 
 </tw-passagedata><tw-passagedata pid="27" name="KingFifthChoice" tags="" position="1000,3200" size="100,100">(set: $score to $score + 2)
 
+&lt;img src=&quot;images/hodegos3.png&quot; class=&quot;story-image&quot;&gt;
+
 &lt;div class=&quot;narrator&quot;&gt;
 Hodegos: Nostos! It certainly has been quite the journey. 
 
@@ -541,6 +567,8 @@ How though, will you be received in your Odyssean reception?
 &lt;/div&gt;
 
 [[Let&#39;s find out.-&gt;Ending]] </tw-passagedata><tw-passagedata pid="28" name="MerchantFifthChoice" tags="" position="800,3200" size="100,100">(set: $score to $score + 1)
+
+&lt;img src=&quot;images/hodegos3.png&quot; class=&quot;story-image&quot;&gt;
 
 &lt;div class=&quot;narrator&quot;&gt;
 Hodegos: Nostos! It certainly has been quite the journey. 
