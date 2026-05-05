@@ -9,7 +9,27 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Odyssey: Return to Ithaca.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Odyssey: Return to Ithaca" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="6A459692-12E4-4F16-B149-768EA0569804" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+<tw-storydata name="Odyssey: Return to Ithaca" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="6A459692-12E4-4F16-B149-768EA0569804" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Ensure full-page coverage */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Parchment-style background (soft, Homeric tone) */
+body {
+  background:
+    radial-gradient(circle at center, #3a2f1c 0%, #1f170f 50%, #0e0c09 100%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 230, 180, 0.04),
+      rgba(255, 230, 180, 0.04) 2px,
+      transparent 2px,
+      transparent 6px
+    );
+}
+
+/* Main story frame */
+tw-story {
   background:
     linear-gradient(rgba(20, 18, 12, 0.96), rgba(15, 12, 8, 0.96)),
     repeating-linear-gradient(
@@ -31,10 +51,11 @@
 
   box-shadow:
     0 0 0 3px #d8c27a,
-    0 0 20px rgba(0,0,0,0.7),
+    0 0 40px rgba(0,0,0,0.9),   /* smoother fade into background */
     inset 0 0 15px rgba(255, 220, 120, 0.08);
 }
 
+/* Base image styling */
 img.story-image {
   width: 100% !important;
   max-width: 100% !important;
@@ -50,14 +71,28 @@ img.story-image {
   opacity: 0.9;
 }
 
+/* SMALL images */
 img.story-image.small {
   max-width: 40% !important;
   max-height: 250px !important;
 }
 
+/* LARGE images */
 img.story-image.large {
   max-width: 100% !important;
   max-height: 650px !important;
+}
+
+/* Narrator styling (unchanged, but fits theme nicely) */
+.narrator {
+  margin: 1em 2em;
+  padding: 0.8em 1em;
+
+  border-left: 2px solid rgba(255,255,255,0.6);
+  border-right: 2px solid rgba(255,255,255,0.6);
+
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .narrator {
@@ -69,7 +104,9 @@ img.story-image.large {
 
   background: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="beginning" color="blue"></tw-tag><tw-passagedata pid="1" name="The beginning" tags="beginning" position="800,400" size="100,100">&lt;img src=&quot;images/beginning.png&quot; class=&quot;story-image&quot;&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="beginning" color="blue"></tw-tag><tw-passagedata pid="1" name="The beginning" tags="beginning" position="800,400" size="100,100">(if: (history:) is not empty)[(restart:)]
+
+&lt;img src=&quot;images/beginning.png&quot; class=&quot;story-image&quot;&gt;
 
 (set: $score to 0)
 
