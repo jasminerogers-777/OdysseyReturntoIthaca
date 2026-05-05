@@ -9,11 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Odyssey: Return to Ithaca.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Odyssey: Return to Ithaca" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="6A459692-12E4-4F16-B149-768EA0569804" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
-  display: none;
-}
-
-/* Base image styling */
+<tw-storydata name="Odyssey: Return to Ithaca" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="6A459692-12E4-4F16-B149-768EA0569804" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Base image styling */
 img.story-image {
   width: 100% !important;
   height: auto !important;
@@ -48,11 +44,11 @@ img.story-image.large {
 
   background: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="beginning" color="blue"></tw-tag><tw-passagedata pid="1" name="The beginning" tags="beginning" position="725,400" size="100,100">&lt;img src=&quot;images/beginning.png&quot; class=&quot;story-image&quot;&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="beginning" color="blue"></tw-tag><tw-passagedata pid="1" name="The beginning" tags="beginning" position="800,400" size="100,100">&lt;img src=&quot;images/beginning.png&quot; class=&quot;story-image&quot;&gt;
 
 (set: $score to 0)
 
-//You sit, exhausted, along the banks of an island with your companions. Your weapons close at hand.
+//You sit, exhausted, along the banks of an island with your companions. Your weapons remain close at hand.
 
 An old wizened woman appears suddenly in front of you.//
 
@@ -65,36 +61,71 @@ Sound good? Ready to get started?
 &lt;/div&gt;
 
 [[Yes, let&#39;s do this!-&gt;First Choice]] 
+
 [[This is stupid, but I guess I have no choice.-&gt;First Choice]] 
+
 [[Is no an option? -&gt;First Choice]] 
 
 
 
 
-</tw-passagedata><tw-passagedata pid="2" name="First Choice" tags="" position="725,525" size="100,100">Since no is not an option . . .
+</tw-passagedata><tw-passagedata pid="2" name="First Choice" tags="" position="800,525" size="100,100">Since no is not an option . . .
 
 **What will you do first?**
 
 [[Take the gold and treasures. Leave all companions.-&gt;FirstBeggar]] 
-[[Take half of the treasures and half of the companions.-&gt;FirstShopkeeper]]
+
+[[Take half of the treasures and half of the companions.-&gt;FirstMerchant]]
+
 [[Leave the treasure and take all companions.-&gt;FirstKing]]
 
-[[Wait, I thought you were supposed to help me. What should I do?-&gt;FirstGuide]]</tw-passagedata><tw-passagedata pid="3" name="FirstBeggar" tags="" position="625,750" size="100,100">(set: $score to $score - 1)
+[[Wait, I thought you were supposed to help me. What should I do?-&gt;FirstGuide]]</tw-passagedata><tw-passagedata pid="3" name="FirstBeggar" tags="" position="600,800" size="100,100">(set: $score to $score - 1)
 
-I choose the gold and treasures. I can buy friends later!
+I chose the gold and treasures. I can buy friends later!
 
-[[Excellent, then let&#39;s get you out on the open seas! -&gt;Second Choice]]</tw-passagedata><tw-passagedata pid="4" name="FirstShopkeeper" tags="" position="750,750" size="100,100">(set: $score to $score + 1)
+&lt;div class=&quot;narrator&quot;&gt; 
+Hodegos: Excellent, then let&#39;s get you out on the open seas! 
+&lt;/div&gt;
+
+//A ship, just small enough for one person, materializes near the shore.
+
+You set sail on a hearty breeze, ready for the day&#39;s adventure.// 
+
+[[Board the ship -&gt;Beggar Second Choice]]
+
+</tw-passagedata><tw-passagedata pid="4" name="FirstMerchant" tags="" position="800,800" size="100,100">(set: $score to $score + 1)
 
 I can&#39;t leave them all behind, but we have to think logically, we&#39;ll need funds! I choose half of the companions, the stoutest warriors, and whatever treasure we can fit on the ship!
 
-[[Excellent, then let&#39;s get you out on the open seas! -&gt;Second Choice]]</tw-passagedata><tw-passagedata pid="5" name="FirstKing" tags="" position="875,750" size="100,100">(set: $score to $score + 2)
+&lt;div class=&quot;narrator&quot;&gt; 
+Hodegos: Excellent, then let&#39;s get you out on the open seas! 
+&lt;/div&gt;
 
-We are nothing without our friends. Gold can be reclaimed and earned again. 
+//A ship, just large enough for you, a few treasures, and your crew, materializes near the shore.
+
+You set sail on a hearty breeze, ready for the day&#39;s adventure.// 
+
+[[Board the ship -&gt;Merchant-King Second Choice]]</tw-passagedata><tw-passagedata pid="5" name="FirstKing" tags="" position="1000,800" size="100,100">(set: $score to $score + 2)
+
+We are nothing without our friends. Gold can be reclaimed or earned again. 
+
 I choose my companions!
 
-[[Excellent, then let&#39;s get you out on the open seas! -&gt;Second Choice]]</tw-passagedata><tw-passagedata pid="6" name="FirstGuide" tags="" position="575,600" size="100,100">I won&#39;t be there for every turn of choice, but I can step in here to assist. 
+&lt;div class=&quot;narrator&quot;&gt; 
+Hodegos: Excellent, then let&#39;s get you out on the open seas! 
+&lt;/div&gt;
+
+//A ship, just large enough for you and your crew, materializes near the shore.
+
+You set sail on a hearty breeze, ready for the day&#39;s adventure.// 
+
+[[Board the ship -&gt;Merchant-King Second Choice]]
+
+</tw-passagedata><tw-passagedata pid="6" name="FirstGuide" tags="" position="600,600" size="100,100">&lt;div class=&quot;narrator&quot;&gt;
+Hodegos: I won&#39;t be there for every turn of choice, but I can step in here to assist. 
 
 Let’s see now: 
+
 If you choose all of the gold you’ll be received well wherever you go, but people could also steal from you and you won’t have anyone to vouch for your reputation. 
 
 If you take half and half, you’ll have some resources, but also mouths to feed, mouths that could turn on you at any moment.
@@ -102,39 +133,359 @@ If you take half and half, you’ll have some resources, but also mouths to feed
 If you take all your companions, you’ll need to rely on the hospitality of the realm, and you’ll find that not all are kind. You will have strong warrior friends with you, but they may aid, or hinder your journey. 
 
 Now I see you&#39;ve just sacked your first city and are eager to return home. 
+&lt;/div&gt;
 
-[[So . . . -&gt;First Choice]] </tw-passagedata><tw-passagedata pid="7" name="Second Choice" tags="" position="725,875" size="100,100">Test Ending
+[[So . . . -&gt;First Choice]] </tw-passagedata><tw-passagedata pid="7" name="Merchant-King Second Choice" tags="" position="900,1000" size="100,100">//Just as you begin to tire, you spot an island . . . . An enchanting voice echoes from the shore. A beautiful songstress sings, braids flowing in the sea air.
 
-You have returned home and finished your journey. 
+You quickly disembark.// 
 
-But how will you be received?
+&lt;div class=&quot;narrator&quot;&gt;
+Hierax: Well, hello there. It has been some time since I have had visitors. 
 
-[[Odyssean Reception-&gt;Ending]]</tw-passagedata><tw-passagedata pid="8" name="Ending" tags="" position="725,1000" size="100,100">(if: $score &gt;= 2)[
+Especially one as dashing as you. 
+
+I see you bring companions as well. Them, I can turn into happily contented pigs, they won&#39;t even notice the change. 
+
+Won&#39;t you stay? I can offer a lifetime of passion.
+&lt;/div&gt;
+
+[[I will stay, as long as my friends won&#39;t be in torment. Also, can you teach me to braid my hair like yours?-&gt;BeggarNarratorInterruptsIsland]]
+
+[[Suuuuure . . . //(You will seduce them for a while, gather your friends, uh pigs, and escape!)//-&gt;MerchantNarratorInterruptsIsland]]
+
+[[Um, no offense, but this has trap written all over it. //(You make a run for your ship.)//-&gt;KingNarratorInterruptsIsland]]
+
+</tw-passagedata><tw-passagedata pid="8" name="Ending" tags="" position="800,3400" size="100,100">(if: $score &gt;= 12)[
 Your reputation precedes you. 
-You are welcomed with love and respect. Shouts of &quot;King, King, King&quot; ring from the streets as you are escorted to the throne; the new leader of your people.
 
-You have reached the end.
-
-(link: &quot;Start over&quot;)[(restart:)]
+You are welcomed with love and respect. Cries of &quot;King!&quot; rise from the streets as you are escorted to the throne - no longer a wanderer, but a ruler returned.
 ]
 
-(else-if: $score &gt;= 1)[
-Your reputation precedes you. 
-You have been savvy, but not always the best of companions. Still you have stories to tell and perhaps a shop to open with your minor wealth. The local bar owner lifts a hand to you, beckoning you forward.
+(else-if: $score &gt;= 7)[
+Your reputation precedes you - but not without whispers.
 
-You have reached the end.
+You have been savvy, clever and resourceful, though not always loyal. 
 
-(link: &quot;Start over&quot;)[(restart:)]
+You arrive with enough to trade, to bargain and to begin again. Doors do not open for you, but neither are they closed.
+
+Your journey continues, shaped by your own hand.
 ]
 
 (else:)[
-Your reputation precedes you. 
-You are untrusted and unwelcomed. Your belongings and treasures are quickly stolen. You end poor and weary, with little to show for the journey.
+Your reputation precedes you - and not kindly.
+
+You are untrusted and unwelcomed. 
+
+What belongings you carry are quickly stolen and no voice rises in your name. 
+
+You wander on, weary and diminished, with little to show for the journey.
+]
 
 You have reached the end.
 
-(link: &quot;Start over&quot;)[(restart:)]
-]</tw-passagedata></tw-storydata>
+(link: &quot;Start over&quot;)[(restart:)]</tw-passagedata><tw-passagedata pid="9" name="Beggar Second Choice" tags="" position="700,1000" size="100,100">//Just as you begin to tire, you spot an island . . . . An enchanting voice echoes from the shore. A beautiful songstress sings, weaving a golden loom methodically.
+
+You quickly disembark.// 
+
+&lt;div class=&quot;narrator&quot;&gt;
+Kalyssa: Well, hello there. It has been some time since I have had a visitor. 
+
+Especially one as dashing as you. 
+
+I see you have no companions as well. Won&#39;t you stay? I can offer a lifetime of immortality.
+&lt;/div&gt;
+
+[[Hot and beautiful forever? Why not! But I&#39;d like a melodious voice as well!-&gt;BeggarNarratorInterruptsIsland]]
+
+[[Suuuuure . . . //(You will seduce them for a while, gather resources and then escape!)//-&gt;MerchantNarratorInterruptsIsland]]
+
+[[Um, no offense, but this has trap written all over it. //(You make a run for your ship.)//-&gt;KingNarratorInterruptsIsland]]</tw-passagedata><tw-passagedata pid="10" name="KingNarratorInterruptsIsland" tags="" position="1000,1200" size="100,100">(set: $score to $score + 2)
+
+//Hodegos blinks into view, a stern look etched across his face. He levels that look directly at the enchanter.//
+
+&lt;div class=&quot;narrator&quot;&gt;
+Hodegos: I am afraid I must interrupt. As peers I&#39;m sure you understand, but I am graded per decision here, so unfortunately, you will need to let our traveller go!
+&lt;/div&gt;
+
+[[Board the ship-&gt;Third Choice]]</tw-passagedata><tw-passagedata pid="11" name="BeggarNarratorInterruptsIsland" tags="" position="600,1200" size="100,100">(set: $score to $score - 1)
+
+//Hodegos blinks into view, a stern look etched across his face. He levels that look directly at you.//
+
+&lt;div class=&quot;narrator&quot;&gt;
+Hodegos: I am afraid I must interrupt. As appealing as it may be to watch you embrace your own vanity, this is my only gig. 
+
+I am graded per decision you see. 
+
+Unfortunately you will need to move forward!
+&lt;/div&gt;
+
+[[Board the ship-&gt;Third Choice]]</tw-passagedata><tw-passagedata pid="12" name="MerchantNarratorInterruptsIsland" tags="" position="800,1200" size="100,100">(set: $score to $score + 1)
+
+//Hodegos blinks into view, a stern look etched across his face. He levels that look directly at the enchanter. Then you.//
+
+&lt;div class=&quot;narrator&quot;&gt;
+Hodegos: I am afraid I must interrupt. As appealing as it may be to watch you both sing to your hearts content, this is my only gig. 
+
+I am graded per decision you see. 
+
+Unfortunately our traveller will need to move forward!
+&lt;/div&gt;
+
+[[Board the ship-&gt;Third Choice]]</tw-passagedata><tw-passagedata pid="13" name="Third Choice" tags="" position="800,1400" size="100,100">//The seas are tumultuous, tossing your ship unapologetically against the rough waves. Your clothes shred in the salty wind. You fear shipwreck is upon you!
+
+Ah, shoreline. A calm river meets the beach. A strikingly tall figure plays along with other maidens among the sands. 
+
+You dock, waving for assistance.// 
+
+&lt;div class=&quot;narrator&quot;&gt;
+Alcyone: Oh! I see the waves have tossed you about something awful. You look to be in need of assistance, but . . . who are you? 
+
+Why should my people help you? 
+&lt;/div&gt;
+
+//(You motion toward your tattered clothes.)// 
+[[I must appear as the lowest of beggars to you, but I am happy to earn my keep. Allow me to win your people&#39;s trust in a contest of endurance and resilience. -&gt;KingThirdChoice]]
+
+//(You carefully craft your story of woe.)// 
+[[I am but a humble traveler seeking to return home. Can you not give aid? Or do your people not follow the civil customs of hospitality? -&gt;MerchantThirdChoice]]
+
+//(You point toward your weapons.)// 
+[[I am a warrior, a commander of armies and leader of many. There is no challenge I am yet to overcome in my journey home. Give me aid, and perhaps I will return wealth to your people in repayment when I arrive home. -&gt;BeggarThirdChoice]]</tw-passagedata><tw-passagedata pid="14" name="KingThirdChoice" tags="" position="1000,1600" size="100,100">(set: $score to $score + 2)
+
+//Alcyone&#39;s eyes brighten with amusement. Your willingness to give, as well as request, is well received. 
+
+She addresses you.// 
+
+&lt;div class=&quot;narrator&quot;&gt;
+Alcyone: What a joy this might be! We are a remote people, and seldom do those find their way here with such a humble attitude. 
+
+Please, come to our palace. You will find rest and mirth! 
+&lt;/div&gt;
+
+//You spend a few days with their people. Games are played, mirth is had and you feel refreshed. 
+
+Upon leaving the kingdom your hosts loads your ship with food, clothes, and every manner of aid. 
+
+Their message is clear: you are welcome to return at any time.//
+
+[[You say your goodbyes and board the ship. Your warriors heartily welcome the bounty.-&gt;Fourth Choice]]</tw-passagedata><tw-passagedata pid="15" name="BeggarThirdChoice" tags="" position="600,1600" size="100,100">(set: $score to $score - 1)
+
+//Alcyone&#39;s eyes narrow in distrust. Your empty promises did not land as well as you had hoped.//
+
+&lt;div class=&quot;narrator&quot;&gt;
+Alcyone: I think we will need to ensure our aid is repaid. We have a few restless warriors. They will accompany you on your journey home and return with goods in tow.
+
+//She turns to speak to her maids.//
+
+Ladies, please fetch food and clothes for this renowned warrior. **Perhaps** you may even bring some that will be useful.
+&lt;/div&gt;
+
+//The maids return quickly, dumping baskets of aid unceremoniously at your feet. 
+
+Their message is clear: you will not find aid again if you ever return.//
+
+[[You quickly grab the best items and leave with warriors in tow.-&gt;Fourth Choice]]
+</tw-passagedata><tw-passagedata pid="16" name="MerchantThirdChoice" tags="" position="800,1600" size="100,100">(set: $score to $score + 1)
+
+//Alcyone&#39;s eyes narrow in distrust. Your emotional tale and manipulative call for aid did not land as well as you had hoped. 
+
+She turns to whisper to her maids. 
+
+She then addresses you.// 
+
+&lt;div class=&quot;narrator&quot;&gt;
+Alcyone: It is surprising that your woeful tale and many travels have not provided the aid you needed thus far. 
+
+Perhaps in future tellings, others may find them more appealing. 
+&lt;/div&gt;
+
+//The ladies return quickly, dumping baskets of aid at your feet. Their message is clear: you will likely not find aid again if you return.//
+
+[[You leave quickly. Once onboard, your warriors gratefully sift through the aid. -&gt;Fourth Choice]]</tw-passagedata><tw-passagedata pid="17" name="Fourth Choice" tags="" position="800,1800" size="100,100">//The seas are calm, easing your passage. 
+
+In the distance a fertile island emerges, teeming with sheep and inlet caves. You have supplies, but not nearly enough meat. You approach the shore cautiously.
+
+Your warriors, eager for the hunt, quickly disembark.
+
+You follow, then halt - a large shadow looms. 
+
+A giant approaches!// 
+
+&lt;div class=&quot;narrator&quot;&gt;
+Phonios: Ah, strangers for my morning meal!
+&lt;/div&gt;
+
+The monstrous creature eats several of the men. He then grabs you, and the remaining few, taking you to his home. The cave is filled with grapes and sheep.
+
+The giant places a large boulder at the entrance.
+
+How will you escape? 
+
+[[Smash the grapes, ply the giant with wine, blind him, and escape under the sheep when he opens the cave.-&gt;MerchantFourthChoice]]
+
+[[To arms! We have no time for winemaking! Fight the giant and blind him. Then escape as he opens the cave.-&gt;KingFourthChoice]]
+
+[[Reveal yourself as a renowned host. Offer the giant a charcuterie board for your freedom: men for meat, and wine made from grapes.-&gt;BeggarFourthChoice]]
+</tw-passagedata><tw-passagedata pid="18" name="MerchantFourthChoice" tags="" position="800,2000" size="100,100">(set: $score to $score + 1)
+
+//The giant growls at you in fury. You may have just made a critical mistake.//
+
+&lt;div class=&quot;narrator&quot;&gt;
+Phonios: Ha! Some nobody just like you tried the same thing months ago! He even tried to blind me. Not today you fool, you will all die!
+&lt;/div&gt;
+
+//Suddenly he turns on you and the men. You fight alongside the men, but stay clearly out of harm&#39;s way.
+
+The warriors are killed quickly, but not before blinding the giant.//
+
+[[You quickly tie yourself to a sheep, and escape as Phonios opens the cave.-&gt;Underworld Choice]]</tw-passagedata><tw-passagedata pid="19" name="BeggarFourthChoice" tags="" position="600,2000" size="100,100">(set: $score to $score -1)
+
+//The giant contemplates your offer carefully. Wine and a meal, who can resist?//
+
+&lt;div class=&quot;narrator&quot;&gt;
+Phonios: I accept your bargain! But you will make the wine first. 
+
+If I do not like it, I will eat you as well!
+&lt;/div&gt;
+
+//Alcyone&#39;s warriors roar in anger as you trade their lives away. They refuse to aid you. 
+
+Toiling away for hours, you finally produce the wine. The giant drinks deeply. 
+
+Then suddenly he turns on you and the men.
+
+The warriors are killed quickly, but not before they manage to blind the giant.//
+
+[[You grab a final cup of wine to go, tie yourself to the sheep, and escape as Phonios opens the cave.-&gt;Underworld Choice]]
+
+</tw-passagedata><tw-passagedata pid="20" name="KingFourthChoice" tags="" position="1000,2000" size="100,100">(set: $score to $score + 2)
+
+//You refuse to give this monster a first strike. Time to fight with honor!//
+
+&lt;div class=&quot;narrator&quot;&gt;
+Phonios: You think you and these scrawny, weather-worn nobodies can fight me? Not today you fool, you will all die!
+&lt;/div&gt;
+
+//You fight with the men, taking the frontline to shield them.
+
+A blow knocks you aside, goring your thigh. 
+
+The warriors fall quickly, but not before blinding the giant.//
+
+[[You limp to the sheep, tie yourself beneath one, and escape as Phonios opens the cave.-&gt;Underworld Choice]]</tw-passagedata><tw-passagedata pid="21" name="Underworld Choice" tags="" position="800,2200" size="100,100">//As you board the ship, the only lonely soul remaining, Hodegos appears before you.//
+
+&lt;div class=&quot;narrator&quot;&gt;
+Hodegos: I won&#39;t mince words with you, that was **rough**.
+
+How about a boon to lift your spirits? 
+
+We can take a quick journey to the Underworld. Perhaps one of the inhabitants can provide a kind word or two. I think you will find it very beneficial.
+
+What do you say?
+&lt;/div&gt;
+
+[[Consult the dead.-&gt;AllUnderworldChoice]]
+[[Skip the Underworld.-&gt;Final Escape]]</tw-passagedata><tw-passagedata pid="22" name="AllUnderworldChoice" tags="" position="600,2400" size="100,100">//Mist covers a cave-like entrance as you pass into the Underworld.
+
+The honored dead gather around closely.
+
+Three figures emerge to stand before you. They speak as one voice.// 
+
+&lt;div class=&quot;narrator&quot;&gt;
+Be welcome, weary traveller. Hodegos bids us grant you a boon.
+
+Step forward in front of the gift you would receive. 
+
+If it is wisdom you desire, Theophrastus may grant it. Or do you seek fame&#39;s glow? Approach Eucleas. For victory&#39;s edge, let Straton guide your blade always.
+
+ But be warned, we can aid your goal, not guarantee the outcome.
+ 
+ Which will you seek?
+&lt;/div&gt;
+
+[[I seek wisdom.-&gt;Underworld Bonus]] 
+[[Fame is my destiny.-&gt;Underworld Bonus]]
+[[In victory all is won. -&gt;Underworld Bonus]] </tw-passagedata><tw-passagedata pid="23" name="Fifth Choice" tags="" position="800,3000" size="100,100">//Your battered raft comes upon the busy docks of a town. 
+
+The people have tanned, sea-farring complexions. Their leader hurries to your raft, assisting you onto the dock.
+
+You tell them your tale, requesting aid for your final voyage home. // 
+
+&lt;div class=&quot;narrator&quot;&gt;
+Krinoos: I cannot say I agree with all of the choices you have made, but I will assist you home. 
+
+I will provide gifts by way of funds and treasures. I will also send a few scouts ahead to speak on your name. 
+
+Which will you choose?
+&lt;/div&gt;
+
+[[Ask the scouts to speak of your riches. You will arrive with them for a royal entrance.-&gt;BeggarFifthChoice]]
+
+[[Distribute the treasures to your people. Ask the scouts to speak of your trails and tribulations.-&gt;KingFifthChoice]]
+
+[[Leave half the treasures here as a fallback, take half for payoffs. Let the scouts speak of your shrewd nature.-&gt;MerchantFifthChoice]]
+
+
+
+</tw-passagedata><tw-passagedata pid="24" name="Underworld Bonus" tags="" position="600,2600" size="100,100">(set: $score to $score + 2)
+
+//The undergod leans forward, whispering words only you can hear. 
+
+You feel a warmth spread through your body. Somehow, you feel the boon take hold, what you sought is now yours.
+
+Hodegos suddenly rushes forward toward you.
+//
+
+&lt;div class=&quot;narrator&quot;&gt;
+Hodegos: Well, this has certainly been enlightening, however you need to return. 
+
+Immediately. 
+
+You are nearly home, but your ship. Well, it is under attack.
+&lt;/div&gt;
+
+[[What!-&gt;Final Escape]]</tw-passagedata><tw-passagedata pid="25" name="Final Escape" tags="" position="800,2800" size="100,100">//A mountain of rock splashes closely by. You look up and see Phonios on the edge of a ridge, shouting and throwing boulders. They quickly splinter your ship. 
+
+You fashion the floating debris into a raft and sail away.// 
+
+&lt;div class=&quot;narrator&quot;&gt;
+Hodegos: Sail just there, it&#39;s not too far. The Thalassioi people live there. I know them well. 
+
+They will aid you in this final stretch of your journey.
+&lt;/div&gt;
+
+[[Seek the Thalassioi.-&gt;Fifth Choice]] </tw-passagedata><tw-passagedata pid="26" name="BeggarFifthChoice" tags="" position="600,3200" size="100,100">(set: $score to $score -1)
+
+&lt;div class=&quot;narrator&quot;&gt;
+Hodegos: Nostos! It certainly has been quite the journey. 
+
+You have now returned home, your travels end here, your decisions sealing your fate.
+
+How though, will you be received in your Odyssean reception? 
+&lt;/div&gt;
+
+[[Let&#39;s find out.-&gt;Ending]] 
+</tw-passagedata><tw-passagedata pid="27" name="KingFifthChoice" tags="" position="1000,3200" size="100,100">(set: $score to $score + 2)
+
+&lt;div class=&quot;narrator&quot;&gt;
+Hodegos: Nostos! It certainly has been quite the journey. 
+
+You have now returned home, your travels end here, your decisions sealing your fate.
+
+How though, will you be received in your Odyssean reception? 
+&lt;/div&gt;
+
+[[Let&#39;s find out.-&gt;Ending]] </tw-passagedata><tw-passagedata pid="28" name="MerchantFifthChoice" tags="" position="800,3200" size="100,100">(set: $score to $score + 1)
+
+&lt;div class=&quot;narrator&quot;&gt;
+Hodegos: Nostos! It certainly has been quite the journey. 
+
+You have now returned home, your travels end here, your decisions sealing your fate.
+
+How though, will you be received in your Odyssean reception? 
+&lt;/div&gt;
+
+[[Let&#39;s find out.-&gt;Ending]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
