@@ -9,13 +9,25 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Odyssey: Return to Ithaca.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Odyssey: Return to Ithaca" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="6A459692-12E4-4F16-B149-768EA0569804" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Ensure full-page coverage */
+<tw-storydata name="Odyssey: Return to Ithaca" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="6A459692-12E4-4F16-B149-768EA0569804" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* =========================
+   GLOBAL PAGE SETTINGS
+========================= */
+
+/* Ensure full-page coverage */
 html, body {
   height: 100%;
   margin: 0;
 }
 
-/* Parchment-style background (soft, Homeric tone) */
+/* Prevent padding/borders from breaking layout */
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PAGE BACKGROUND
+========================= */
+
 body {
   background:
     radial-gradient(circle at center, #3a2f1c 0%, #1f170f 50%, #0e0c09 100%),
@@ -28,7 +40,10 @@ body {
     );
 }
 
-/* Main story frame */
+/* =========================
+   MAIN STORY FRAME
+========================= */
+
 tw-story {
   background:
     linear-gradient(rgba(20, 18, 12, 0.96), rgba(15, 12, 8, 0.96)),
@@ -39,7 +54,7 @@ tw-story {
       transparent 1px,
       transparent 5px
     );
-  
+
   border: 7px solid #b89a4a;
   border-radius: 12px;
 
@@ -49,41 +64,59 @@ tw-story {
   max-width: 1200px;
   width: 92%;
 
+  overflow: hidden;
+
   box-shadow:
     0 0 0 3px #d8c27a,
-    0 0 40px rgba(0,0,0,0.9),   /* smoother fade into background */
+    0 0 40px rgba(0,0,0,0.9),
     inset 0 0 15px rgba(255, 220, 120, 0.08);
 }
 
-/* Base image styling */
-img.story-image {
-  width: 100% !important;
-  max-width: 100% !important;
+/* =========================
+   IMAGE STYLING
+========================= */
 
-  max-height: 500px !important;
+/* Default image style */
+img.story-image {
+  display: block !important;
+
+  width: auto !important;
   height: auto !important;
+
+  max-width: 90% !important;
+  max-height: 650px !important;
 
   object-fit: contain !important;
 
-  display: block !important;
-  margin: 1em auto 1.5em auto !important;
+  margin: 1.5em auto !important;
 
-  opacity: 0.9;
+  opacity: 0.95;
+
+  border-radius: 8px;
 }
 
-/* SMALL images */
+/* Small images */
 img.story-image.small {
-  max-width: 40% !important;
-  max-height: 250px !important;
+  max-width: 45% !important;
+  max-height: 300px !important;
 }
 
-/* LARGE images */
+/* Large images */
 img.story-image.large {
-  max-width: 80% !important;
-  max-height: 750px !important;
+  max-width: 95% !important;
+  max-height: 800px !important;
 }
 
-/* Narrator styling (unchanged, but fits theme nicely) */
+/* Extra large images */
+img.story-image.xlarge {
+  max-width: 100% !important;
+  max-height: 900px !important;
+}
+
+/* =========================
+   NARRATOR STYLING
+========================= */
+
 .narrator {
   margin: 1em 2em;
   padding: 0.8em 1em;
@@ -92,17 +125,7 @@ img.story-image.large {
   border-right: 2px solid rgba(255,255,255,0.6);
 
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
 
-.narrator {
-  margin: 1em 2em;
-  padding: 0.8em 1em;
-
-  border-left: 2px solid rgba(255,255,255,0.6);
-  border-right: 2px solid rgba(255,255,255,0.6);
-
-  background: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="beginning" color="blue"></tw-tag><tw-passagedata pid="1" name="The beginning" tags="beginning" position="800,400" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[Odyssey: Return to Ithaca
 Jasmine Rogers - FILM 2195]
@@ -146,7 +169,7 @@ Sound good? Ready to get started?
 
 [[Wait, I thought you were supposed to help me. What should I do?-&gt;FirstGuide]]
 
-&lt;img src=&quot;images/firstchoice.png&quot; class=&quot;story-image&quot;&gt;</tw-passagedata><tw-passagedata pid="3" name="FirstBeggar" tags="" position="600,800" size="100,100">(set: $score to $score - 1)
+&lt;img src=&quot;images/firstchoice.png&quot; class=&quot;story-image large&quot;&gt;</tw-passagedata><tw-passagedata pid="3" name="FirstBeggar" tags="" position="600,800" size="100,100">(set: $score to $score - 1)
 
 I chose the gold and treasures. I can buy friends later!
 
@@ -188,7 +211,7 @@ You set sail on a hearty breeze, ready for the day&#39;s adventure.//
 
 [[Board the ship -&gt;Merchant-King Second Choice]]
 
-</tw-passagedata><tw-passagedata pid="6" name="FirstGuide" tags="" position="600,600" size="100,100">&lt;img src=&quot;images/hodegos.png&quot; class=&quot;story-image.large&quot;&gt;
+</tw-passagedata><tw-passagedata pid="6" name="FirstGuide" tags="" position="600,600" size="100,100">&lt;img src=&quot;images/hodegos.png&quot; class=&quot;story-image large&quot;&gt;
 
 &lt;div class=&quot;narrator&quot;&gt;
 Hodegos: I won&#39;t be there for every turn of choice, but I can step in here to assist. 
@@ -452,7 +475,7 @@ The warriors fall quickly, but not before blinding the giant.//
 
 [[You limp to the sheep, tie yourself beneath one, and escape as Phonios opens the cave.-&gt;Underworld Choice]]</tw-passagedata><tw-passagedata pid="21" name="Underworld Choice" tags="" position="800,2200" size="100,100">//As you board the ship, the only lonely soul remaining, Hodegos appears before you.//
 
-&lt;img src=&quot;images/hodegos2.png&quot; class=&quot;story-image.large&quot;&gt;
+&lt;img src=&quot;images/hodegos2.png&quot; class=&quot;story-image large&quot;&gt;
 
 &lt;div class=&quot;narrator&quot;&gt;
 Hodegos: I won&#39;t mince words with you, that was **rough**.
@@ -471,7 +494,7 @@ The honored dead gather around closely.
 
 Three figures emerge to stand before you. They speak as one.// 
 
-&lt;img src=&quot;images/undergods.png&quot; class=&quot;story-image.large&quot;&gt;
+&lt;img src=&quot;images/undergods.png&quot; class=&quot;story-image large&quot;&gt;
 
 &lt;div class=&quot;narrator&quot;&gt;
 Be welcome, weary traveller. Hodegos bids us grant you a boon.
@@ -532,7 +555,7 @@ You are nearly home, but your ship. Well, it is under attack.
 
 You fashion the floating debris into a raft and sail away.// 
 
-&lt;img src=&quot;images/phonios2.png&quot; class=&quot;story-image&quot;&gt;
+&lt;img src=&quot;images/phonios2.png&quot; class=&quot;story-image large&quot;&gt;
 
 &lt;div class=&quot;narrator&quot;&gt;
 Hodegos: Sail just there, it&#39;s not too far. The Thalassioi people live there. I know them well. 
